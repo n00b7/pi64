@@ -1,12 +1,10 @@
 # pi64
 
-pi64 is an experimental 64-bit OS for the Raspberry Pi 3. It is based on Debian Stretch and backed by a 4.11 Linux kernel.
+pi64 is an experimental 64-bit OS for the Raspberry Pi 4B. It is based on Debian Stretch and backed by a 4.19 Linux kernel.
 
 ## Releases
 
 The latest images are always available in the [releases](https://github.com/bamarni/pi64/releases) section.
-
-There are 2 versions : `lite` and `desktop`. The desktop version is based on [LXDE](http://lxde.org/).
 
 ## Installation
 
@@ -19,18 +17,6 @@ During first boot the installation process will continue for a few minutes, then
 The default user is `pi` and its password `raspberry`, it has passwordless root privileges escalation through `sudo`.
 
 Once logged in, you might want to run `sudo pi64-config` in order to get assisted with your setup!
-
-On the lite version, SSH is enabled by default.
-
-## FAQ
-
-### How do I update the Linux Kernel?
-
-You can upgrade the Linux Kernel using this command :
-
-    sudo pi64-update
-
-This would make sure the latest release from https://github.com/bamarni/pi64-kernel is installed.
 
 *Do not use `apt-get` to install or update a kernel, kernel modules or kernel headers as this is not supported.*
 
